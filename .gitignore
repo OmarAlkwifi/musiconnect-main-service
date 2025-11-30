@@ -1,0 +1,28 @@
+### .gitignore  ###
+
+```gitignore
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node modules (if any frontend or JS service)
+node_modules/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Docker build outputs
+*.tar
+*.zip

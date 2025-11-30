@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MusicConnect Test Client</title>
+</head>
+<body>
+    <h1>MusicConnect API Tester</h1>
+
+    <label>User ID: </label>
+    <input type="text" id="userId" value="testuser123" /><br><br>
+
+    <button onclick="getPlaylists()">Get Playlists</button>
+    <button onclick="getTracks()">Get Saved Tracks</button>
+    <button onclick="getProfile()">Get Profile</button>
+
+    <h2>Response</h2>
+    <pre id="output"></pre>
+
+    <script>
+        async function apiRequest(endpoint) {
+            const userId = document.getElementById("userId").value;
+
+            const res = await fetch(`http://localhost:8081${endpoint}`, {
+                method: "GET",
+                headers: {
+                    "X-User-Id": userId
+                }
+            });
+
+            const data = await res.json();
+            document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+        }
+
+        function getPlaylists() { apiRequest("/music/playlists"); }
+        function getTracks() { apiRequest("/music/tracks"); }
+        function getProfile() { apiRequest("/music/me"); }
+    </script>
+</body>
+</html>

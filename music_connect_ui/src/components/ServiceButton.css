@@ -1,0 +1,18 @@
+.ServiceButton {
+    border: 1px solid #000;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 10px;
+
+    a {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+}

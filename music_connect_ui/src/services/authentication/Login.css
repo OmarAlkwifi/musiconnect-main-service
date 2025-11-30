@@ -1,0 +1,62 @@
+.auth-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+
+    .logo {
+        padding-top: 5%;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .auth-wrapper {
+        width: 53%;
+        display: grid;
+        place-items: center;
+
+        .username-container, .password-container {
+            width: 85%;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            margin: 10px;
+
+            .username-label, .password-label {
+                margin: 10px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.auth-footer {
+    width: 45%;
+    margin: 5px;
+
+    .create-account {
+        margin: 10px;
+        font-size: 10px;
+        text-align: left;
+
+        a {
+            color: #20B654;
+        }
+        a:visited {
+            color: black;
+        }
+    }
+
+    .login-error {
+        color: red;
+    }
+
+    .stay-unauthenticated {
+        float: left;
+        width: fit-content;
+    }
+
+    .login-button {
+        float: right;
+    }
+}

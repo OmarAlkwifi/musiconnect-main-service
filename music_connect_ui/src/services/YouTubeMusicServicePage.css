@@ -1,0 +1,33 @@
+.service-content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .account-connected {
+        color: green;
+        font-size: 10px;
+    }
+}
+
+.playlists {
+    text-align: left;
+    padding: 20px;
+
+    .playlist-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 90px;
+        margin-right: 40px;
+    }
+}
+
+.playlists-container {
+    text-align: left;
+    padding-left: 90px;
+    padding-top: 0;
+}

@@ -1,0 +1,17 @@
+.search-service-page {
+    .search-header {
+        display: flex;
+        padding: 10px;
+
+        .back-button {
+            margin-right: 20px;
+            margin-left: 145px;
+        }
+    }
+
+    .search-results {
+        width: 70%;
+        text-align: left;
+        margin: 0 150px;
+    }
+}

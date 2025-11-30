@@ -1,0 +1,13 @@
+.dashboard-page-content {
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    .service-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 820px;
+        margin: auto;
+    }
+}
